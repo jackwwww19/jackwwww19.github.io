@@ -3,159 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F*ck Everybody</title>
-  <!-- Import Silkscreen font for meme styling -->
-  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-  <!-- Import Font Awesome for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Favicon -->
-  <link rel="icon" href="https://jackwwww19.github.io/images/Uhtd1dr0_400x400.ico" type="image/x-icon">
+  <title>Middle East Time</title>
+  <!-- Import a clean, readable font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
-    /* Dark theme with red highlights, perfect for an angry "f*ck everybody" vibe */
+    /* Light theme with warm colors */
     body {
-      background-color: #111; /* Dark background */
-      color: white;
-      font-family: 'Silkscreen', sans-serif;
+      background-color: #f0f8ff; /* Light sky blue */
+      color: #333;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
       margin: 0;
       padding: 0;
-      height: auto;
-    }
-
-    /* Large, bold title with a lot of attitude */
-    h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      letter-spacing: 3px;
-      margin: 30px 0;
-      text-shadow: 3px 3px black, -3px -3px black;
-      color: #e53935; /* Red for anger */
-    }
-
-    /* Descriptive text, directly calling out the hypocrites */
-    p {
-      font-size: 2rem;
-      font-weight: bold;
-      max-width: 800px;
-      margin: 20px auto;
-      line-height: 1.6;
-      text-shadow: 2px 2px black, -2px -2px black;
-      color: #ff3d00;
-    }
-
-    /* Meme images with more chaotic, grunge styling */
-    .meme-images {
+      height: 100vh;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      max-width: 90%;
-      margin-bottom: 30px;
+      align-items: center;
+      flex-direction: column;
     }
 
-    .meme-images img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border: 5px solid white;
-      transform: rotate(calc(10deg * var(--rotation)));
-      transition: transform 0.2s ease-in-out;
-    }
-
-    /* Meme text block with chaotic attitude */
-    .meme-text {
-      font-size: 2.5rem;
+    /* Title styling */
+    h1 {
+      font-size: 3rem;
       font-weight: bold;
-      background: white;
-      color: black;
-      padding: 20px;
-      display: inline-block;
-      margin-top: 30px;
-      text-transform: uppercase;
-      box-shadow: 6px 6px black;
-      transform: rotate(-5deg);
-      text-align: center;
-      -webkit-text-stroke: 1px black;
-      cursor: pointer;
-      word-wrap: break-word;
-      max-width: 90%;
-      margin-bottom: 30px;
-      color: #ff0000; /* Angry red */
-      border: 3px solid #ff0000;
+      color: #ff6347; /* Tomato color */
+      margin-bottom: 20px;
     }
 
-    /* Footer text for the extreme final statement */
-    footer {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-shadow: 2px 2px black, -2px -2px black;
-      margin-top: 30px;
-      padding-bottom: 20px;
-      color: #ff0000;
-    }
-
-    /* Social icons styling */
-    .social-icons {
-      margin-top: 20px;
+    /* Time display styling */
+    .time {
       font-size: 2rem;
+      font-weight: bold;
+      color: #ff4500; /* Orange red for time */
     }
 
-    .social-icons a {
-      color: white;
-      margin: 0 15px;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #ff0000;
+    /* Footer styling */
+    footer {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <h1>F*ck Everybody Who's Full of Lies</h1>
-  <p>There’s a group of people, a bunch of lying hypocrites, pretending to have all the answers. They say they’re here to ‘help’ you, but they’ve been drowning you in their twisted truths, acting like they have the monopoly on what’s real. Here’s the truth: we see through your deception, and we're not buying it anymore. Keep lying, but we’re here to expose it all.</p>
+  <h1>Current Middle East Time (Gulf Standard Time)</h1>
+  <div class="time" id="middleEastTime">Loading Time...</div>
 
-  <!-- Meme Images Section -->
-  <div class="meme-images">
-    <img src="https://jackwwww19.github.io/images/meme1.png" alt="Meme Image 1" style="--rotation: 1;">
-    <img src="https://jackwwww19.github.io/images/meme2.png" alt="Meme Image 2" style="--rotation: -1;">
-    <img src="https://jackwwww19.github.io/images/meme3.png" alt="Meme Image 3" style="--rotation: 2;">
-    <img src="https://jackwwww19.github.io/images/meme4.png" alt="Meme Image 4" style="--rotation: -2;">
-    <img src="https://jackwwww19.github.io/images/meme5.png" alt="Meme Image 5" style="--rotation: 3;">
-    <img src="https://jackwwww19.github.io/images/meme6.png" alt="Meme Image 6" style="--rotation: -3;">
-  </div>
-
-  <!-- Meme text block with extremely defiant message -->
-  <div class="meme-text" id="memeText" onclick="copyText()">7x4UuQoe6YVC3PhnezYgufuTuuLktZsoMRy3G92epump</div>
-
-  <!-- Social media icons -->
-  <div class="social-icons">
-    <a href="https://x.com/ANTI_LGBQT" target="_blank" title="Follow the Chaos on X (Twitter)">
-      <i class="fab fa-twitter"></i>
-    </a>
-  </div>
-
-  <footer>© 2024 The Revolution Starts Here | NO MERCY</footer>
+  <footer>© 2024 Time in the Middle East</footer>
 
   <script>
-    // Function to copy only the text after "FUCK"
-    function copyText() {
-      const text = document.getElementById('memeText').innerText;
-      const textToCopy = text.split("FUCK")[1].trim(); // Extract the part after "FUCK"
-      
-      if (textToCopy) {
-        const input = document.createElement('input');
-        document.body.appendChild(input);
-        input.setAttribute('value', textToCopy);  // Copy the text after "FUCK"
-        input.select();
-        document.execCommand('copy');
-        document.body.removeChild(input);
-        alert('Text copied to clipboard: ' + textToCopy);
-      } else {
-        alert('No text after "FUCK" to copy!');
-      }
+    // Function to update the time for the Middle East (Gulf Standard Time, GMT+4)
+    function updateMiddleEastTime() {
+      const options = {
+        timeZone: 'Asia/Dubai', // Middle East (UAE, Dubai time zone)
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+
+      const now = new Date();
+      const middleEastTime = now.toLocaleTimeString('en-GB', options);
+      document.getElementById('middleEastTime').innerText = 'Current Time: ' + middleEastTime;
     }
+
+    // Update the time every second
+    setInterval(updateMiddleEastTime, 1000);
+
+    // Initial call to display the time
+    updateMiddleEastTime();
   </script>
 
 </body>
