@@ -4,14 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ultimate Meme Zone</title>
-  <!-- Import Silkscreen font for meme styling -->
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-  <!-- Import Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    /* Black and white meme style theme with Pepe green background */
     body {
-      background-color: #1D8429; /* Pepe green background */
+      background-color: #1D8429;
       color: white;
       font-family: 'Silkscreen', sans-serif;
       display: block;
@@ -20,8 +17,7 @@
       padding: 0;
       height: auto;
     }
-
-    /* Large, bold meme-style title with double shadow for a heavier look */
+    
     h1 {
       font-size: 4rem;
       font-weight: bold;
@@ -30,7 +26,6 @@
       text-shadow: 3px 3px black, -3px -3px black;
     }
 
-    /* Bold, meme-style paragraph with thicker text shadow */
     p {
       font-size: 2rem;
       font-weight: bold;
@@ -40,32 +35,16 @@
       text-shadow: 2px 2px black, -2px -2px black;
     }
 
-    /* Meme images in chaotic layout */
-    .meme-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      max-width: 90%;
-      margin-bottom: 30px;
+    .avatar-container {
+      margin: 20px 0;
     }
 
-    /* Meme image styling with rotation effect */
-    .meme-images img {
+    .avatar {
       width: 150px;
       height: 150px;
-      object-fit: cover;
-      border: 5px solid white;
-      transform: rotate(calc(10deg * var(--rotation)));
-      transition: transform 0.2s ease-in-out;
+      border-radius: 50%;
     }
 
-    /* Add zoom effect on hover */
-    .meme-images img:hover {
-      transform: rotate(calc(-10deg * var(--rotation))) scale(1.2);
-    }
-
-    /* Meme text block with a heavier look using text stroke */
     .meme-text {
       font-size: 2.5rem;
       font-weight: bold;
@@ -85,7 +64,6 @@
       margin-bottom: 30px;
     }
 
-    /* Footer text styling */
     footer {
       font-size: 1.5rem;
       font-weight: bold;
@@ -94,7 +72,6 @@
       padding-bottom: 20px;
     }
 
-    /* Social icons styling */
     .social-icons {
       margin-top: 20px;
       font-size: 2rem;
@@ -116,14 +93,19 @@
   <h1>Join the $MAPE Army!</h1>
   <p>Many men, wish death upon Pepe, They say I’m just a frog, but I’m so much more, In the meme wars, I’m the one they adore. Keep the gats away, because Pepe is here to stay.</p>
 
+  <!-- Avatar Section -->
+  <div class="avatar-container">
+    <img src="https://raw.githubusercontent.com/username/repository-name/main/images/avatar.png" alt="Avatar" class="avatar">
+  </div>
+
   <!-- Meme Images Section -->
   <div class="meme-images">
-    <img src="images/meme1.png" alt="Meme Image 1" style="--rotation: 1;">
-    <img src="images/meme2.png" alt="Meme Image 2" style="--rotation: -1;">
-    <img src="images/meme3.png" alt="Meme Image 3" style="--rotation: 2;">
-    <img src="images/meme4.png" alt="Meme Image 4" style="--rotation: -2;">
-    <img src="images/meme5.png" alt="Meme Image 5" style="--rotation: 3;">
-    <img src="images/meme6.png" alt="Meme Image 6" style="--rotation: -3;">
+    <img src="https://placekitten.com/150/150" alt="Meme Image 1" style="--rotation: 1;">
+    <img src="https://placekitten.com/151/151" alt="Meme Image 2" style="--rotation: -1;">
+    <img src="https://placekitten.com/152/152" alt="Meme Image 3" style="--rotation: 2;">
+    <img src="https://placekitten.com/153/153" alt="Meme Image 4" style="--rotation: -2;">
+    <img src="https://placekitten.com/154/154" alt="Meme Image 5" style="--rotation: 3;">
+    <img src="https://placekitten.com/155/155" alt="Meme Image 6" style="--rotation: -3;">
   </div>
 
   <!-- Meme text block, modified to say "CA:PUMP" -->
@@ -131,7 +113,7 @@
 
   <!-- Social media icons -->
   <div class="social-icons">
-    <a href="https://x.com/MAPESOLPUMP" target="_blank" title="Follow us on X (Twitter)">
+    <a href="https://X.com" target="_blank" title="Follow us on X (Twitter)">
       <i class="fab fa-twitter"></i>
     </a>
     <a href="https://t.me/MAPEONSOL" target="_blank" title="Join us on Telegram">
