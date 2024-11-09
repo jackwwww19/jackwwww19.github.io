@@ -144,16 +144,22 @@
   <footer>© 2024 MAGA Pepe | NEVER SURRENDER!</footer>
 
   <script>
-    // Function to copy the text to clipboard
+    // Function to copy only the text after "CA:"
     function copyText() {
       const text = document.getElementById('memeText').innerText;
-      const input = document.createElement('input');
-      document.body.appendChild(input);
-      input.setAttribute('value', text);
-      input.select();
-      document.execCommand('copy');
-      document.body.removeChild(input);
-      alert('Text copied to clipboard: ' + text);
+      const textToCopy = text.split("CA:")[1];  // Extract the part after "CA:"
+      
+      if (textToCopy) {
+        const input = document.createElement('input');
+        document.body.appendChild(input);
+        input.setAttribute('value', textToCopy.trim());  // Copy the text after "CA:"
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        alert('Text copied to clipboard: ' + textToCopy.trim());
+      } else {
+        alert('No text after "CA:" to copy!');
+      }
     }
   </script>
 
