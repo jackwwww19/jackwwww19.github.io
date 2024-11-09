@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ultimate Meme Zone</title>
+  <title>$MAPE MAGA PEPE</title>
+
+  <!-- Link to favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
   <!-- Import Silkscreen font for meme styling -->
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
   <!-- Import Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <style>
     /* Black and white meme style theme with Pepe green background */
     body {
@@ -118,16 +124,16 @@
 
   <!-- Meme Images Section -->
   <div class="meme-images">
-    <img src="https://jackwwww19.github.io/images/meme1.png" alt="Meme Image 1" style="--rotation: 1;">
-    <img src="https://jackwwww19.github.io/images/meme2.png" alt="Meme Image 2" style="--rotation: -1;">
-    <img src="https://jackwwww19.github.io/images/meme3.png" alt="Meme Image 3" style="--rotation: 2;">
-    <img src="https://jackwwww19.github.io/images/meme4.png" alt="Meme Image 4" style="--rotation: -2;">
-    <img src="https://jackwwww19.github.io/images/meme5.png" alt="Meme Image 5" style="--rotation: 3;">
-    <img src="https://jackwwww19.github.io/images/meme6.png" alt="Meme Image 6" style="--rotation: -3;">
+    <img src="https://github.com/jackwwww19/trumpboys.github.io/blob/main/images/meme1.png?raw=true" alt="Meme Image 1" style="--rotation: 1;">
+    <img src="https://github.com/jackwwww19/trumpboys.github.io/blob/main/images/meme2.png?raw=true" alt="Meme Image 2" style="--rotation: -1;">
+    <img src="https://github.com/jackwwww19/trumpboys.github.io/blob/main/images/meme3.png?raw=true" alt="Meme Image 3" style="--rotation: 2;">
+    <img src="https://github.com/jackwwww19/trumpboys.github.io/blob/main/images/meme4.png?raw=true" alt="Meme Image 4" style="--rotation: -2;">
+    <img src="https://github.com/jackwwww19/trumpboys.github.io/blob/main/images/meme5.png?raw=true" alt="Meme Image 5" style="--rotation: 3;">
+    <img src="https://github.com/jackwwww19/trumpboys.github.io/blob/main/images/meme6.png?raw=true" alt="Meme Image 6" style="--rotation: -3;">
   </div>
 
   <!-- Meme text block, modified to say "CA:PUMP" -->
-  <div class="meme-text" id="memeText" onclick="copyText()">🔥 willcomesoonpump 🔥</div>
+  <div class="meme-text" id="memeText" onclick="copyText()">🔥 CA:willcomesoonpump 🔥</div>
 
   <!-- Social media icons -->
   <div class="social-icons">
@@ -144,7 +150,7 @@
   <script>
     // Function to copy the text to clipboard
     function copyText() {
-      const text = "willcomesoonpump"; // The text you want to copy
+      const text = document.getElementById('memeText').innerText;
       const input = document.createElement('input');
       document.body.appendChild(input);
       input.setAttribute('value', text);
